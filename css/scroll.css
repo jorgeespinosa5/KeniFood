@@ -1,0 +1,20 @@
+body{
+    font-family: sans-serif;
+}
+body h1{
+    font-size:22px;
+    margin-left: 10px;
+}
+.items{
+    display: flex;
+    overflow-x: auto;
+}
+.items::-webkit-scrollbar{
+    display: none;
+}
+.items .item{
+    min-width: 150px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    margin: 10px;
+}

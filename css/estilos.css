@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    background-color:#FF4100; /* Fondo */
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+}
+
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 60px;
+    padding: 10px;
+    color: rgb(0, 0, 0);/* Texto */
+    font-size: 30px;
+    transition: all 500ms ease;
+}
+header label:hover{
+    background-color: #FF4100;/* Color seleccion Movil */
+    cursor: pointer;
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.menu li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);/* Texto */
+    display:block;
+    padding: 15px 20px;
+    transition: all 500ms ease;
+}
+.menu li a:hover{
+ background-color: #FF4100;   /* Color sobre menu PC */
+}
+@media(max-width:768px){
+	header label{
+		display:block;
+	}
+	.menu{
+		position:absolute;
+		background:#FF4100; /* Fondo */
+		width:100%;
+		margin-top:-100%;
+		transition:all 0.6s;
+	}
+	.menu ul{
+		flex-direction:column;
+        border-top: 1px solid #FF4100;/* Linea in menu */
+	}
+	.menu li{
+	}
+	#btn-menu:checked ~ .menu{
+		margin:0;
+	}
+}
+
+
+
+
+nav {
+    float: left; /* Desplazamos el nav hacia la izquierda */
+  }
+   
+  nav ul {
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+  }
+   
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+   
+  nav ul li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+   
+  nav ul li:hover {
+    background: #3ead47;
+  }
